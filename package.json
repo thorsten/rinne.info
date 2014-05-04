@@ -1,6 +1,6 @@
 {
-  "name": "www-rinne-info",
-  "version": "0.0.0",
+  "name": "rinne.info",
+  "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -25,7 +25,8 @@
     "grunt-concurrent": "~0.5.0",
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.3.1",
-    "jshint-stylish": "~0.1.5"
+    "jshint-stylish": "~0.1.5",
+    "grunt-contrib-less": "^0.11.0"
   },
   "engines": {
     "node": ">=0.10.0"

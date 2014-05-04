@@ -48,8 +48,8 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             styles: {
-                files: ['<%= config.app %>/styles/{,*/}*.css'],
-                tasks: ['newer:copy:styles', 'autoprefixer']
+                files: ['<%= config.app %>/styles/{,*/}*.less'],
+                tasks: ['less:development', 'newer:copy:styles', 'autoprefixer']
             },
             livereload: {
                 options: {
@@ -140,6 +140,27 @@ module.exports = function (grunt) {
                 options: {
                     run: true,
                     urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
+                }
+            }
+        },
+
+        // LESS compilation
+        less: {
+            development: {
+                options: {
+                    paths: ["<%= config.app %>/styles"]
+                },
+                files: {
+                    "<%= config.app %>/styles/main.css": "<%= config.app %>/styles/main.less"
+                }
+            },
+            production: {
+                options: {
+                    paths: ["<%= config.app %>/styles"],
+                    cleancss: true
+                },
+                files: {
+                    "<%= config.app %>/styles/main.css": "<%= config.app %>/styles/main.less"
                 }
             }
         },

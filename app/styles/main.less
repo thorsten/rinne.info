@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    color: #757575;
+    color: #777777;
 }
 
 img {
@@ -52,11 +52,12 @@ h1, h2, h3, h4, h5, h6{
 .navbar-default {
     background: rgba(255, 255, 255, 0.85);
     border: none;
-    color: #777;
+    color: #fff;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     position: fixed;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.85);
 
     .navbar-nav {
         margin: 0 auto;
@@ -411,7 +412,6 @@ a:link,a:visited,.navbar-default .navbar-nav>li>a:hover,
 }
 
 .spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
-
     background: @main-link-color;
 }
 
@@ -435,7 +435,7 @@ a:link,a:visited,.navbar-default .navbar-nav>li>a:hover,
 
 
 
-@media(max-width:992px) {
+@media ( max-width: 992px ) {
 
     #page-profile .profile{
         margin:0 auto 20px auto;
@@ -444,7 +444,7 @@ a:link,a:visited,.navbar-default .navbar-nav>li>a:hover,
 
 }
 
-@media  (max-width: 479px) {
+@media (max-width: 479px) {
 
     #page-welcome header h1 {
         font-size: 2em;

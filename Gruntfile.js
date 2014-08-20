@@ -148,19 +148,19 @@ module.exports = function (grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["<%= config.app %>/styles"]
+                    paths: ['<%= config.app %>/styles']
                 },
                 files: {
-                    "<%= config.app %>/styles/main.css": "<%= config.app %>/styles/main.less"
+                    '<%= config.app %>/styles/main.css': '<%= config.app %>/styles/main.less'
                 }
             },
             production: {
                 options: {
-                    paths: ["<%= config.app %>/styles"],
+                    paths: ['<%= config.app %>/styles'],
                     cleancss: true
                 },
                 files: {
-                    "<%= config.app %>/styles/main.css": "<%= config.app %>/styles/main.less"
+                    '<%= config.app %>/styles/main.css': '<%= config.app %>/styles/main.less'
                 }
             }
         },

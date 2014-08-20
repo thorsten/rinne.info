@@ -620,7 +620,7 @@ FileETag None
 
 # Redirects
 RewriteRule ^lebenslauf.html$ /index.html#page-profile [R,NE]
-RewriteRule ^lebenslauf.html$ /index.html#page-talks [R,NE]
+RewriteRule ^talks.html$ /index.html#page-talks [R,NE]
 RewriteRule ^publikationen.html$ /index.html#page-profile [R,NE]
 RewriteRule ^fotos.html$ /index.html#page-photos [R,NE]
 RewriteRule ^kontakt.html$ /index.html#page-contact [R,NE]

@@ -17,7 +17,8 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    color: #777777;
+    font-size: 15px;
+    color: #222222;
 }
 
 img {
@@ -29,7 +30,8 @@ a {
         outline: 0;
     }
     &:hover, &:active {
-        text-decoration: none;
+        text-decoration: underline;
+        color: darken(@main-link-color, 20%);
     }
     img {
         border: 0;
@@ -376,6 +378,9 @@ h1, h2, h3, h4, h5, h6{
 .btn-twitter:hover {
     color:#2BA9E0;
 }
+.btn-github:hover {
+    color: #000000;
+}
 .btn-facebook:hover {
     color:#204385;
 }
@@ -404,7 +409,7 @@ h1, h2, h3, h4, h5, h6{
     float: none;
 }
 
-a:link,a:visited,.navbar-default .navbar-nav>li>a:hover,
+a:link, a:visited, .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus,a:hover,a:active,.navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus{

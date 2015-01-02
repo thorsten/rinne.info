@@ -365,6 +365,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
+            'less:development',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -381,6 +382,7 @@ module.exports = function (grunt) {
         if (target !== 'watch') {
             grunt.task.run([
                 'clean:server',
+                'less:development',
                 'concurrent:test',
                 'autoprefixer'
             ]);
@@ -394,6 +396,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'less:production',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',

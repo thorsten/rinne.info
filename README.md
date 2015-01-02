@@ -11,4 +11,8 @@
 
     $ grunt build
 
-(c) 1997 - 2014 Thorsten Rinne
+## Deploy a release
+
+    $ grunt deploy
+
+(c) 1997 - 2015 Thorsten Rinne

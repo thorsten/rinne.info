@@ -341,6 +341,19 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        // Deployment via FTP
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 'www.rinne.info',
+                    port: 21,
+                    authKey: 'production'
+                },
+                src: '<%= config.dist %>',
+                dest: '/www.rinne.info'
+            }
         }
     });
 
@@ -398,5 +411,10 @@ module.exports = function (grunt) {
         'newer:jshint',
         'test',
         'build'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build',
+        'ftp-deploy'
     ]);
 };

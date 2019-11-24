@@ -347,12 +347,12 @@ module.exports = function (grunt) {
         'ftp-deploy': {
             build: {
                 auth: {
-                    host: 'www.rinne.info',
+                    host: 'w018670c.kasserver.com',
                     port: 21,
                     authKey: 'production'
                 },
                 src: '<%= config.dist %>',
-                dest: '/www.rinne.info'
+                dest: '/rinne.info'
             }
         }
     });

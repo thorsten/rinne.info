@@ -27,7 +27,7 @@
     "grunt-usemin": "~3.1.1",
     "jshint-stylish": "~2.2.1",
     "load-grunt-tasks": "~5.1.0",
-    "time-grunt": "~0.3.1"
+    "time-grunt": "~2.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
